@@ -95,7 +95,7 @@ void list_bus()
 			Cyan();
 			printf("\n==List of bus==");
 			int b_no;
-			printf("\nEnter the Bus Number:");
+			printf("\nHow many bus you want enter in system:");
 			scanf("%d",&b_no);
 			if(b_no>10)
 			  {
@@ -510,7 +510,7 @@ void admin_menu()
 void signup()
 	 	{
 		FILE *signup;
-	 	signup=fopen("D://first sem project//login_up.DAT","ab+");
+	 	signup=fopen("login_up.bin","ab+");
 	 	if(signup==NULL)
 	 	   {
 		 		printf("sorry!file not created");
@@ -552,7 +552,7 @@ void signup()
 void login()
 	{
 	   FILE *signup;
-	   signup=fopen("D://first sem project//login_up.DAT","rb");
+	   signup=fopen("login_up.bin","rb");
 	   if(signup==NULL)
 		   {
 		   	printf("sorry !invalid to file");
